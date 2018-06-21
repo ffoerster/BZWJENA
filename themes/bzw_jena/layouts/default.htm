@@ -8,6 +8,11 @@ default = 1
 
 [staticMenu mainMenu]
 code = "hauptmenu"
+
+[localePicker]
+forceUrl = 1
+
+[alternateHrefLangElements]
 ==
 <!DOCTYPE html>
 <html>
@@ -28,6 +33,7 @@ code = "hauptmenu"
 
         <!-- Footer -->
         <footer id="layout-footer">
+            {% partial 'components/language' %}
             {% partial 'site/footer' %}
         </footer>
 
