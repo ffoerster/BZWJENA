@@ -1,0 +1,1 @@
+release: php artisan october:up
