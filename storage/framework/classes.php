@@ -27,4 +27,13 @@
   'RainLab\\Builder\\Classes\\ModelModel' => 'plugins/rainlab/builder/classes/ModelModel.php',
   'RainLab\\Builder\\Classes\\ModelFileParser' => 'plugins/rainlab/builder/classes/ModelFileParser.php',
   'RainLab\\Builder\\Classes\\PhpSourceStream' => 'plugins/rainlab/builder/classes/PhpSourceStream.php',
+  'system\\Controllers\\settings' => 'modules/system/controllers/settings.php',
+  'cms\\Controllers\\themes' => 'modules/cms/controllers/themes.php',
+  'cms\\Controllers\\index' => 'modules/cms/controllers/index.php',
+  'RainLab\\Builder\\Components\\RecordList' => 'plugins/rainlab/builder/components/RecordList.php',
+  'RainLab\\Builder\\Components\\RecordDetails' => 'plugins/rainlab/builder/components/RecordDetails.php',
+  'RainLab\\Pages\\Components\\StaticPage' => 'plugins/rainlab/pages/components/StaticPage.php',
+  'RainLab\\Pages\\Components\\StaticMenu' => 'plugins/rainlab/pages/components/StaticMenu.php',
+  'RainLab\\Pages\\Components\\StaticBreadcrumbs' => 'plugins/rainlab/pages/components/StaticBreadcrumbs.php',
+  'RainLab\\Pages\\Classes\\Snippet' => 'plugins/rainlab/pages/classes/Snippet.php',
 );

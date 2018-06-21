@@ -25,6 +25,7 @@ nbproject
 # Ignore Laravel/OctoberCMS logs and cache
 storage/logs/
 storage/framework/
+storage/framework/cache/
 
 /.idea
 
