@@ -10,12 +10,14 @@ mix
   .sass('assets/src/scss/style.scss', 'assets/dist/css/')
   .options({
     postCss: [
+      require('stylelint')(),
       require('postcss-utilities')(),
       require('cssnano')(),
-      require('stylelint')(),
       require('postcss-preset-env')(),
       require('rucksack-css')(),
-      require('autoprefixer')()
+      require('autoprefixer')({
+        browsers: '>0.1%'
+      })
     ]
   })
   .browserSync({
