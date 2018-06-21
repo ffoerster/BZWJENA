@@ -36,4 +36,8 @@
   'RainLab\\Pages\\Components\\StaticMenu' => 'plugins/rainlab/pages/components/StaticMenu.php',
   'RainLab\\Pages\\Components\\StaticBreadcrumbs' => 'plugins/rainlab/pages/components/StaticBreadcrumbs.php',
   'RainLab\\Pages\\Classes\\Snippet' => 'plugins/rainlab/pages/classes/Snippet.php',
+  'RainLab\\Pages\\FormWidgets\\MenuItems' => 'plugins/rainlab/pages/formwidgets/MenuItems.php',
+  'RainLab\\Pages\\Classes\\MenuItem' => 'plugins/rainlab/pages/classes/MenuItem.php',
+  'Rainlab\\Pages\\FormWidgets\\MenuItemSearch' => 'plugins/rainlab/pages/formwidgets/MenuItemSearch.php',
+  'RainLab\\Pages\\Classes\\MenuItemReference' => 'plugins/rainlab/pages/classes/MenuItemReference.php',
 );
