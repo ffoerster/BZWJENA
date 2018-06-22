@@ -7,7 +7,7 @@ mix
   })
   .js('assets/src/js/app.js', 'assets/dist/js/')
   .extract(['jquery','aos','popper.js'])
-  .sass('assets/src/scss/style.scss', 'assets/dist/css/')
+  .sass('assets/src/scss/main.scss', 'assets/dist/css/')
   .options({
     postCss: [
       require('stylelint')(),

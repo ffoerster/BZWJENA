@@ -27,6 +27,7 @@
     "postcss-utilities": "^0.8.0",
     "rucksack-css": "^1.0.2",
     "shariff": "^3.0.1",
+    "stylefmt": "^6.0.0",
     "stylelint": "^9.3.0",
     "stylelint-config-airbnb": "^0.0.0",
     "stylelint-config-recommended-scss": "^3.2.0",
