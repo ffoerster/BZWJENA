@@ -1,0 +1,14 @@
+{
+  "name": "ffoerster/bzwjena",
+  "authors": [
+    {
+      "name": "Florian Förster",
+      "email": "florian@leedaudio.com"
+    }
+  ],
+
+
+  "autoload": {
+    "files": ["mix.php"]
+  }
+}

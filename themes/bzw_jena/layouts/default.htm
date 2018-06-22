@@ -1,0 +1,48 @@
+description = "Default layout"
+
+[staticPage]
+useContent = 1
+default = 1
+
+[staticBreadcrumbs]
+
+[staticMenu mainMenu]
+code = "hauptmenu"
+
+[localePicker]
+forceUrl = 1
+
+[alternateHrefLangElements]
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        {% partial 'site/meta' %}
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial 'site/header' %}
+        </header>
+
+        <!-- Content -->
+        <section id="layout-content">
+            {% page %}
+        </section>
+
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial 'components/language' %}
+            {% partial 'site/footer' %}
+        </footer>
+
+        <!-- Scripts -->
+        <script src="{{ 'assets/dist/js/manifest.js'|theme }}"></script>
+        <script src="{{ 'assets/dist/js/vendor.js'|theme }}"></script>
+        <script src="{{ 'assets/dist/js/app.js'|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+static-pages:
+    index: {  }
+    praxis:
+        praxis-therapie: {  }
+        praxis-supervision: {  }
+        praxis-coaching: {  }
+        praxis-organisationsberatung: {  }
+        praxis-praktika: {  }
+    weiterbildungen:
+        weiterbildungen-weiterbildungsgange: {  }
+        weiterbildungen-inhouse-angebot: {  }
+    selbsterfahrungsseminare:
+        selbsterfahrungsseminare-selbsterfahrungsgruppen: {  }
+        selbsterfahrungsseminare-selbsterfahrungsseminare: {  }
+        selbsterfahrungsseminare-unsere-gasttrainer: {  }
+    ueber-uns:
+        ueber-uns-mitarbeiter: {  }
+        ueber-uns-selbstverstandnis: {  }
+        ueber-uns-geschichte: {  }
+        ueber-uns-dgsf: {  }
+        ueber-uns-partner: {  }
+    kontakt:
+        kontakt-wegbeschreibung: {  }
+        kontakt-impressum: {  }
+        kontakt-datenschutz: {  }
