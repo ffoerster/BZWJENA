@@ -1,4 +1,5 @@
 let mix = require('laravel-mix');
+require( 'laravel-mix-stylelint' );
 
 mix
   .setPublicPath('./')
@@ -8,9 +9,12 @@ mix
   .js('assets/src/js/app.js', 'assets/dist/js/')
   .extract(['jquery','aos','popper.js'])
   .sass('assets/src/scss/main.scss', 'assets/dist/css/')
+  .stylelint({
+    configFile:  path.join( __dirname, '.stylelintrc' ),
+    context:     './assets/src',
+  })
   .options({
     postCss: [
-      require('stylelint')(),
       require('postcss-utilities')(),
       require('cssnano')(),
       require('postcss-preset-env')(),
