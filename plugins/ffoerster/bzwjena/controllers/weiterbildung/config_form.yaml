@@ -1,0 +1,10 @@
+name: Weiterbildung
+form: $/ffoerster/bzwjena/models/weiterbildung/fields.yaml
+modelClass: ffoerster\BZWJena\Models\Weiterbildung
+defaultRedirect: ffoerster/bzwjena/weiterbildung
+create:
+    redirect: 'ffoerster/bzwjena/weiterbildung/update/:id'
+    redirectClose: ffoerster/bzwjena/weiterbildung
+update:
+    redirect: ffoerster/bzwjena/weiterbildung
+    redirectClose: ffoerster/bzwjena/weiterbildung

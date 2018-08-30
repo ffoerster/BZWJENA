@@ -1,0 +1,24 @@
+fields:
+    termin_title:
+        label: Titel
+        span: auto
+        type: text
+    termin_slug:
+        label: Termin
+        span: auto
+        preset:
+            field: termin_title
+            type: slug
+        type: text
+    angebote:
+        label: Angebote
+        span: auto
+        nameFrom: angebot_title
+        descriptionFrom: description
+        type: relation
+    leitung:
+        label: Leitung
+        nameFrom: team_title
+        descriptionFrom: description
+        span: auto
+        type: relation

@@ -1,0 +1,10 @@
+name: Angebote
+form: $/ffoerster/bzwjena/models/angebot/fields.yaml
+modelClass: ffoerster\BZWJena\Models\Angebot
+defaultRedirect: ffoerster/bzwjena/angebote
+create:
+    redirect: 'ffoerster/bzwjena/angebote/update/:id'
+    redirectClose: ffoerster/bzwjena/angebote
+update:
+    redirect: ffoerster/bzwjena/angebote
+    redirectClose: ffoerster/bzwjena/angebote

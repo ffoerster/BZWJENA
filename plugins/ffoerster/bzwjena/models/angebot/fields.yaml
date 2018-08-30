@@ -1,0 +1,12 @@
+fields:
+    angebot_title:
+        label: Titel
+        span: auto
+        type: text
+    angebot_slug:
+        label: Slug
+        span: auto
+        preset:
+            field: angebot_title
+            type: slug
+        type: text

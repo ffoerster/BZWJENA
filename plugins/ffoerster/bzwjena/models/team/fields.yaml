@@ -1,0 +1,21 @@
+fields:
+    team_title:
+        label: Name
+        span: auto
+        type: text
+    team_slug:
+        label: Slug
+        span: auto
+        preset:
+            field: team_title
+            type: slug
+        type: text
+    teambild:
+        label: Bild
+        span: auto
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload

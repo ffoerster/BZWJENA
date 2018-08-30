@@ -1,0 +1,29 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table ffoerster_bzwjena_termine'
+    - builder_table_create_ffoerster_bzwjena_termine.php
+1.0.3:
+    - 'Created table ffoerster_bzwjena_angebote'
+    - builder_table_create_ffoerster_bzwjena_angebote.php
+1.0.4:
+    - 'Created table ffoerster_bzwjena_termine_relations'
+    - builder_table_create_ffoerster_bzwjena_termine_relations.php
+1.0.5:
+    - 'Created table ffoerster_bzwjena_team'
+    - builder_table_create_ffoerster_bzwjena_team.php
+1.0.6:
+    - 'Drop table ffoerster_bzwjena_termine_relations'
+    - builder_table_delete_ffoerster_bzwjena_termine_relations.php
+1.0.7:
+    - 'Created table ffoerster_bzwjena_termin_team'
+    - builder_table_create_ffoerster_bzwjena_termin_team.php
+1.0.8:
+    - 'Drop table ffoerster_bzwjena_termine_teamrelations'
+    - builder_table_delete_ffoerster_bzwjena_termine_teamrelations.php
+1.0.9:
+    - 'Created table ffoerster_bzwjena_termin_angebot'
+    - builder_table_create_ffoerster_bzwjena_termin_angebot.php
+1.0.10:
+    - 'Created table ffoerster_bzwjena_weiterbildung'
+    - builder_table_create_ffoerster_bzwjena_weiterbildung.php

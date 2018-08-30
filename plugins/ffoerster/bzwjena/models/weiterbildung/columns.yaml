@@ -1,0 +1,16 @@
+columns:
+    id:
+        label: id
+        type: number
+    created_at:
+        label: created_at
+        type: datetime
+    updated_at:
+        label: updated_at
+        type: datetime
+    wb_title:
+        label: wb_title
+        type: text
+    wb_slug:
+        label: wb_slug
+        type: text

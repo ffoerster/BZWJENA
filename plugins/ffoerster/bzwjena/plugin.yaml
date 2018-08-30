@@ -1,0 +1,23 @@
+plugin:
+    name: 'ffoerster.bzwjena::lang.plugin.name'
+    description: 'ffoerster.bzwjena::lang.plugin.description'
+    author: 'Florian Förster'
+    icon: oc-icon-at
+    homepage: ''
+navigation:
+    termine:
+        label: Termine
+        url: ffoerster/bzwjena/termine
+        icon: icon-calendar
+    angebote:
+        label: Angebote
+        url: ffoerster/bzwjena/angebote
+        icon: icon-life-ring
+    team:
+        label: Team
+        url: ffoerster/bzwjena/team
+        icon: icon-group
+    weiterbildung:
+        label: Weiterbildung
+        url: ffoerster/bzwjena/weiterbildung
+        icon: icon-life-ring

@@ -1,0 +1,4 @@
+title: Team
+modelClass: ffoerster\BZWJena\Models\Team
+toolbar:
+    buttons: reorder_toolbar

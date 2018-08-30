@@ -1,0 +1,4 @@
+title: Angebote
+modelClass: ffoerster\BZWJena\Models\Angebot
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,12 @@
+fields:
+    wb_title:
+        label: Titel
+        span: auto
+        type: text
+    wb_slug:
+        label: Slug
+        span: auto
+        preset:
+            field: wb_title
+            type: slug
+        type: text
