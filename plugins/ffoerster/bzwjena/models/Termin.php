@@ -41,4 +41,10 @@ class Termin extends Model
 		]
 	];
 
+	public $belongsTo = [
+		'leitung2' => ['ffoerster\bzwjena\Models\Team'],
+	];
+
+
+
 }

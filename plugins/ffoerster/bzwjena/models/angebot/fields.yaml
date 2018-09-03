@@ -2,6 +2,7 @@ fields:
     angebot_title:
         label: Titel
         span: auto
+        required: 1
         type: text
     angebot_slug:
         label: Slug
@@ -10,3 +11,12 @@ fields:
             field: angebot_title
             type: slug
         type: text
+    angebot_subtitle:
+        label: Untertitel
+        span: auto
+        type: text
+    angebot_description:
+        label: Beschreibung
+        size: large
+        span: full
+        type: richeditor

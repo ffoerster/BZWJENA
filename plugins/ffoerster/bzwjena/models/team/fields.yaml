@@ -2,6 +2,7 @@ fields:
     team_title:
         label: Name
         span: auto
+        required: 1
         type: text
     team_slug:
         label: Slug
@@ -19,3 +20,15 @@ fields:
             mode: crop
             extension: auto
         type: fileupload
+    team_function:
+        label: Funktion
+        span: auto
+        type: text
+    team_type:
+        label: Teamkategorie
+        span: auto
+        options:
+            1: Gasttrainer
+            2: Weiterbildungsteam
+        required: 1
+        type: dropdown

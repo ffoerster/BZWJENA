@@ -1,0 +1,11 @@
+name: Beziehungswerkstatt
+items:
+    -
+        title: Start
+        type: url
+        url: /
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

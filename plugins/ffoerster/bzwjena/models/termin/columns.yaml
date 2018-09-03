@@ -1,16 +1,28 @@
 columns:
-    id:
-        label: id
-        type: number
-    created_at:
-        label: created_at
-        type: datetime
-    updated_at:
-        label: updated_at
-        type: datetime
     termin_title:
-        label: termin_title
+        label: Titel
         type: text
-    termin_slug:
-        label: termin_slug
+        searchable: true
+        sortable: true
+    termin_location:
+        label: Ort
         type: text
+        searchable: true
+        sortable: true
+    termin_price:
+        label: Preis
+        type: number
+        sortable: true
+    termin_featured:
+        label: Featured
+        type: switch
+        sortable: true
+    termin_active:
+        label: Aktiv
+        type: switch
+        sortable: true
+    termin_date:
+        label: Datum
+        type: datetime
+        searchable: true
+        sortable: true

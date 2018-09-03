@@ -1,4 +1,4 @@
-description = "Default layout"
+description = "Layout für Beziehungswerkstatt"
 ==
 <!DOCTYPE html>
 <html>
@@ -6,21 +6,20 @@ description = "Default layout"
         {% partial 'site/meta' %}
     </head>
     <body>
-        
-        <div uk-sticky uk-height-viewport class="uk-section-primary">bla</div>
-        
+
         <!-- Header -->
         <header id="layout-header">
             {% partial 'site/header' %}
         </header>
 
         <!-- Content -->
-        <section class="uk-section" id="layout-content">
+        <section id="layout-content">
             {% page %}
         </section>
 
         <!-- Footer -->
-        <footer class="uk-section" id="layout-footer">
+        <footer id="layout-footer">
+            {% partial 'components/language' %}
             {% partial 'site/footer' %}
         </footer>
 

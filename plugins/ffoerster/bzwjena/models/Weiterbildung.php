@@ -19,4 +19,8 @@ class Weiterbildung extends Model
      * @var string The database table used by the model.
      */
     public $table = 'ffoerster_bzwjena_weiterbildung';
+
+	public $attachOne = [
+		'wb_file' => 'System\Models\File'
+	];
 }
