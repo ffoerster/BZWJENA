@@ -1,0 +1,45 @@
+title = "Beratung & Therapie"
+url = "/beratung-therapie"
+layout = "default"
+is_hidden = 0
+==
+<?php
+use ffoerster\bzwjena\Models\Team;
+    function onStart(){
+        $this['team'] = Team::take(16)->get();
+}
+?>
+==
+<div class="uk-section uk-section-default uk-section-xsmall">
+  <div class="uk-container">
+    <ul uk-accordion="multiple: true">
+      <li class="uk-open">
+        <a class="uk-accordion-title uk-link-reset" href="#">
+          <hr>
+            <span class="uk-margin-left">Einzeltherapie</span>
+        </a>
+        <div class="uk-accordion-content uk-margin-left">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </li>
+      <li>
+        <a class="uk-accordion-title uk-link-reset" href="#">
+          <hr>
+            <span class="uk-margin-left">Paartherapie</span>
+        </a>
+        <div class="uk-accordion-content uk-margin-left">
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+        </div>
+      </li>
+      <li>
+        <a class="uk-accordion-title uk-link-reset" href="#">
+          <hr>
+            <span class="uk-margin-left">Einzeltherapie</span>
+        </a>
+        <div class="uk-accordion-content uk-margin-left">
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

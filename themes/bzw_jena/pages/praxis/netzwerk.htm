@@ -1,0 +1,58 @@
+title = "Netzwerk"
+url = "/netzwerk"
+layout = "default"
+is_hidden = 0
+==
+<?php
+use ffoerster\bzwjena\Models\Team;
+    function onStart(){
+        $this['team'] = Team::take(16)->get();
+    }
+?>
+==
+<div class="uk-section uk-section-default uk-section-xsmall">
+  <div class="uk-container">
+    <h2 class="uk-h2">Unsere Gasttrainer</h2>
+    <div uk-grid class="uk-child-width-1-4@s uk-grid-small">
+
+      {% for team in team if team.team_type == 1 %}
+      <div>
+        <div class="uk-tile uk-tile-muted">
+          <h4>{{ team.team_title }}</h4>
+          <h4>{{ team.team_function }}</h4>
+          <img uk-img src="{{ team.teambild.path }}" alt="">
+          {{ team.team_type }}
+        </div>
+      </div>
+      {% else %}
+      <li class="no-data">No Movies found</li>
+      {% endfor %}
+
+      <div>
+        <div class="uk-tile uk-tile-muted">
+          bla
+        </div>
+      </div>
+
+      <div>
+        <div class="uk-tile uk-tile-muted">
+          bla
+        </div>
+      </div>
+
+      <div>
+        <div class="uk-tile uk-tile-muted">
+          bla
+        </div>
+      </div>
+
+      <div>
+        <div class="uk-tile uk-tile-muted">
+          bla
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

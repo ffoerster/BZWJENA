@@ -8,28 +8,14 @@ localeUrl[en] = "/home"
 localeUrl[sk] = "/home"
 localeUrl[cz] = "/home"
 localeUrl[pl] = "/home"
-
-[builderList terminListe]
-modelClass = "ffoerster\BZWJena\Models\Termin"
-scope = "-"
-scopeValue = "{{ :scope }}"
-displayColumn = "termin_title"
-noRecordsMessage = "No records found"
-detailsPage = "-"
-detailsUrlParameter = "id"
-recordsPerPage = 4
-pageNumber = "{{ :page }}"
 ==
-<?
-    use ffoerster\bzwjena\Models\Termin;
+<?php
+use ffoerster\bzwjena\Models\Termin;
     function onStart(){
         $this['termine'] = Termin::take(4)->get();
-}
-
+    }
 ?>
-
 ==
-
 <div class="uk-section uk-section-default uk-section-xsmall">
   <div class="uk-container uk-container-expand uk-padding-small uk-padding-remove-vertical uk-padding-remove-left">
 
@@ -76,10 +62,10 @@ pageNumber = "{{ :page }}"
           <h3 class="uk-h3">Kommende Veranstaltungen</h3>
 
           <div class="uk-child-width-1-4@s uk-grid-small uk-text-center" uk-grid>
-            {% for termin in termine %}
+            {% for termin in termine if termin.termin_featured %}
             <div>
               {# Use spaceless tag to remove spaces inside the A tag. #}
-              <h3>{{termin.termin_date}}</h3>
+              <h3>{{termin.termin_date | strftime('%d.%m.%Y') }}</h3>
               <h4>{{ termin.termin_title }}</h4>
               {{ html_limit(termin.termin_teaser, 150)|raw }}
               <a uk-icon="icon:arrow" href="/termine/termin/{{termin.termin_slug}}"></a>

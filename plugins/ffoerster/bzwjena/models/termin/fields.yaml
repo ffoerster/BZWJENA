@@ -61,10 +61,3 @@ fields:
         size: large
         span: full
         type: richeditor
-    leitung2:
-        label: 'Leitung2'
-        nameFrom: team_title
-        descriptionFrom: description
-        list: $/ffoerster/bzwjena/models/team/columns.yaml
-        span: auto
-        type: recordfinder
