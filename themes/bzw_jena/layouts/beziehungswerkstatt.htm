@@ -6,20 +6,23 @@ description = "Layout für Beziehungswerkstatt"
         {% partial 'site/meta' %}
     </head>
     <body>
-
+        
+        <div uk-sticky uk-height-viewport class="uk-section-primary">
+            {% placeholder headswitch %}
+        </div>
+        
         <!-- Header -->
         <header id="layout-header">
             {% partial 'site/header' %}
         </header>
 
         <!-- Content -->
-        <section id="layout-content">
+        <main id="layout-content">
             {% page %}
-        </section>
+        </main>
 
         <!-- Footer -->
         <footer id="layout-footer">
-            {% partial 'components/language' %}
             {% partial 'site/footer' %}
         </footer>
 

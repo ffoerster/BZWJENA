@@ -1,9 +1,53 @@
 [viewBag]
 ==
-<div class="menu">
-  {% component 'mainMenu' %}
-</div>
+<div class="uk-tile uk-tile-primary uk-padding-small uk-text-center" uk-height-viewport uk-sticky>
+  <a uk-icon="icon:menu; ratio: 2" href="" class="uk-icon-link" uk-toggle="target: #offcanvas-usage"></a>
 
-<div class="breadcrumb">
-  {% component 'staticBreadcrumbs' %}
+  <div id="offcanvas-usage" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-background-primary uk-flex uk-flex-column">
+
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+      <ul class="uk-nav uk-nav-default uk-nav-left uk-margin-auto-vertical">
+
+        <li>
+          <a href="#">
+            <span class="uk-text-uppercase uk-h5">Beratung & Therapie</span>
+            <h6 class="uk-h6 uk-h6 uk-margin-remove">psychologisch, systemisch</h6>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="uk-text-uppercase uk-h5">Reflexion</span>
+            <h6 class="uk-h6 uk-h6 uk-margin-remove">beruflichen Handelns</h6>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="uk-text-uppercase uk-h5">&uuml;ber uns</span>
+            <h6 class="uk-h6 uk-h6 uk-margin-remove">und unsere Arbeitsweise</h6>
+          </a>
+        </li>
+
+        <li class="uk-nav-divider"></li>
+
+        <li><a href="#">Unser Netzwerk <span class="uk-margin-small-left" uk-icon="icon: arrow-right"></span></a></li>
+        <li><a href="#">Geschichte der Praxis <span class="uk-margin-small-left" uk-icon="icon: arrow-right"></span></a></li>
+        <li><a href="#">Praktika <span class="uk-margin-small-left" uk-icon="icon: arrow-right"></span></a></li>
+
+        <li class="uk-nav-header">Kontakt</li>
+        <li>
+          <span class="uk-text-bold">gstreicher@beziehungswerkstatt­jena.de</span>
+        </li>
+        <li>monika</li>
+
+      </ul>
+
+
+
+
+    </div>
+  </div>
 </div>

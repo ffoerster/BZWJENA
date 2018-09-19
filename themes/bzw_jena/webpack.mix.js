@@ -7,7 +7,7 @@ mix
     processCssUrls: false
   })
   .js('assets/src/js/app.js', 'assets/dist/js/')
-  .extract(['jquery','aos','popper.js'])
+  .extract(['jquery','aos','popper.js','uikit'])
   .sass('assets/src/scss/main.scss', 'assets/dist/css/')
   .stylelint({
     configFile:  path.join( __dirname, '.stylelintrc' ),

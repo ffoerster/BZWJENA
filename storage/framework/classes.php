@@ -135,4 +135,5 @@
   'ffoerster\\BZWJena\\Models\\Team' => 'plugins/ffoerster/bzwjena/models/Team.php',
   'ffoerster\\bzwjena\\Controllers\\weiterbildung' => 'plugins/ffoerster/bzwjena/controllers/weiterbildung.php',
   'ffoerster\\BZWJena\\Models\\Weiterbildung' => 'plugins/ffoerster/bzwjena/models/Weiterbildung.php',
+  'ffoerster\\bzwjena\\Models\\Termin' => 'plugins/ffoerster/bzwjena/models/Termin.php',
 );
