@@ -138,4 +138,6 @@
   'ffoerster\\bzwjena\\Models\\Termin' => 'plugins/ffoerster/bzwjena/models/Termin.php',
   'vojtasvoboda\\twigextensions\\Plugin' => 'plugins/vojtasvoboda/twigextensions/Plugin.php',
   'VojtaSvoboda\\TwigExtensions\\Classes\\TimeDiffTranslator' => 'plugins/vojtasvoboda/twigextensions/classes/TimeDiffTranslator.php',
+  'backend\\Controllers\\media' => 'modules/backend/controllers/media.php',
+  'backend\\Controllers\\users' => 'modules/backend/controllers/users.php',
 );

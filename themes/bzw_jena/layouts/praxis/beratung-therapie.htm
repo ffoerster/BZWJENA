@@ -1,0 +1,73 @@
+description = "Psychologisch,  systemische  Beratung  und  Therapie"
+
+[staticPage]
+useContent = 1
+default = 0
+==
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% partial 'site/meta' %}
+</head>
+<body>
+
+<div class="uk-offcanvas-content uk-grid-collapse" uk-grid>
+  <!-- Header -->
+  <header id="layout-header" class="bzw-width-1-12 uk-visible@s">
+    {% partial 'site/header' %}
+  </header>
+
+  <div id="header-mobile" class="uk-width-1-1 uk-hidden@s">
+    {% partial 'site/header-mobile' %}
+  </div>
+
+  <div id="main-content" class="uk-width-expand">
+    <div id="site-switcher">
+      {% partial 'site/siteswitcher' %}
+    </div>
+
+    <!-- Content -->
+    <main id="layout-content">
+
+      <div class="uk-section uk-section-default uk-section-xsmall">
+        <div class="uk-container">
+          <h2 class="uk-h2">Beratung & Therapie</h2>
+
+              <ul uk-accordion="multiple: true">
+                {repeater name="content_sections" label="Akkordeons" tab="MyTab" prompt="Add another content section"}
+                <li>
+                  <a class="uk-accordion-title uk-link-reset" href="#">
+                    <hr>
+                    <span class="uk-margin-left">{text name="title" label="Title"}Title{/text}</span>
+                  </a>
+                  <div class="uk-accordion-content uk-margin-left">
+                    <p>{textarea name="content" label="Content"}Content{/textarea}</p>
+                  </div>
+                </li>
+                {/repeater}
+              </ul>
+
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer id="layout-footer" class="uk-width-1-1">
+    {% partial 'site/footer' %}
+  </footer>
+
+
+</div>
+
+<!-- Scripts -->
+<script src="{{ 'assets/dist/js/manifest.js'|theme }}"></script>
+<script src="{{ 'assets/dist/js/vendor.js'|theme }}"></script>
+<script src="{{ 'assets/dist/js/app.js'|theme }}"></script>
+{% framework extras %}
+{% scripts %}
+
+</body>
+</html>

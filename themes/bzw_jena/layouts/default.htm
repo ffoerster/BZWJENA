@@ -1,4 +1,8 @@
 description = "Default layout"
+
+[staticPage]
+useContent = 1
+default = 0
 ==
 <!DOCTYPE html>
 <html>
@@ -24,6 +28,9 @@ description = "Default layout"
 
                 <!-- Content -->
                 <main id="layout-content">
+                {variable name="ueberschrift" label="Überschrift" tab="Header" type="text"}{/variable}
+                    {{ ueberschrift }}
+
                     {% page %}
                 </main>
             </div>
