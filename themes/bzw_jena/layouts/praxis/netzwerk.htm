@@ -1,0 +1,118 @@
+description = "Netzwerk"
+
+[staticPage]
+useContent = 1
+default = 0
+==
+<?php
+use ffoerster\bzwjena\Models\Team;
+    function onStart(){
+        $this['team'] = Team::take(16)->get();
+}
+?>
+==
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% partial 'site/meta' %}
+</head>
+<body>
+
+<div class="uk-offcanvas-content uk-grid-collapse" uk-grid>
+  <!-- Header -->
+  <header id="layout-header" class="bzw-width-1-12 uk-visible@s">
+    {% partial 'site/header' %}
+  </header>
+
+  <div id="header-mobile" class="uk-width-1-1 uk-hidden@s">
+    {% partial 'site/header-mobile' %}
+  </div>
+
+  <div id="main-content" class="uk-width-expand">
+    <div id="site-switcher">
+      {% partial 'site/siteswitcher' %}
+    </div>
+
+    <!-- Content -->
+    <main id="layout-content">
+      <div class="uk-section uk-section-default uk-section-xsmall">
+        <div class="uk-container">
+
+          <h2 class="uk-h2">Institutionen</h2>
+          <ul class="uk-list">
+          {repeater name="institution_section" label="Institutionen" tab="Institutionen" prompt="Weiteren Link hinzufügen"}
+          <li>
+            <a class="uk-accordion-title uk-link-reset" href="{{ link }}">
+              {text name="title" label="Title"}Title{/text}
+            </a>
+            {variable name="link" label="Link" type="text"}{/variable}
+          </li>
+          {/repeater}
+          </ul>
+
+
+          <h2 class="uk-h2">Unsere Gasttrainer</h2>
+          <div uk-grid class="uk-child-width-1-4@s uk-grid-small">
+
+            {% for team in team if team.team_type == 1 %}
+            <div>
+              <div class="uk-tile uk-tile-muted">
+                <h4>{{ team.team_title }}</h4>
+                <h4>{{ team.team_function }}</h4>
+                <img uk-img src="{{ team.teambild.path }}" alt="">
+                {{ team.team_type }}
+              </div>
+            </div>
+            {% else %}
+            <li class="no-data">Keine Einträge gefunden.</li>
+            {% endfor %}
+
+            <div>
+              <div class="uk-tile uk-tile-muted">
+                bla
+              </div>
+            </div>
+
+            <div>
+              <div class="uk-tile uk-tile-muted">
+                bla
+              </div>
+            </div>
+
+            <div>
+              <div class="uk-tile uk-tile-muted">
+                bla
+              </div>
+            </div>
+
+            <div>
+              <div class="uk-tile uk-tile-muted">
+                bla
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer id="layout-footer" class="uk-width-1-1">
+    {% partial 'site/footer' %}
+  </footer>
+
+
+</div>
+
+<!-- Scripts -->
+<script src="{{ 'assets/dist/js/manifest.js'|theme }}"></script>
+<script src="{{ 'assets/dist/js/vendor.js'|theme }}"></script>
+<script src="{{ 'assets/dist/js/app.js'|theme }}"></script>
+{% framework extras %}
+{% scripts %}
+
+</body>
+</html>

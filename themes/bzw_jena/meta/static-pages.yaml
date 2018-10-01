@@ -1,5 +1,4 @@
 static-pages:
-    index: {  }
     praxis:
         praxis-therapie: {  }
         praxis-supervision: {  }
@@ -23,3 +22,7 @@ static-pages:
         kontakt-wegbeschreibung: {  }
         kontakt-impressum: {  }
         kontakt-datenschutz: {  }
+    home: {  }
+    praxis-reflexion: {  }
+    praxis-beratung-therapie: {  }
+    praxis-netzwerk: {  }

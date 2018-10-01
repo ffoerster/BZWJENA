@@ -1,0 +1,28 @@
+columns:
+    termin_title:
+        label: Titel
+        type: text
+        searchable: true
+        sortable: true
+    termin_location:
+        label: Ort
+        type: text
+        searchable: true
+        sortable: true
+    termin_price:
+        label: Preis
+        type: number
+        sortable: true
+    termin_featured:
+        label: Featured
+        type: switch
+        sortable: true
+    termin_active:
+        label: Aktiv
+        type: switch
+        sortable: true
+    termin_date:
+        label: Datum
+        type: datetime
+        searchable: true
+        sortable: true

@@ -1,0 +1,10 @@
+name: Termine
+form: $/ffoerster/bzwjena/models/termin/fields.yaml
+modelClass: ffoerster\BZWJena\Models\Termin
+defaultRedirect: ffoerster/bzwjena/termine
+create:
+    redirect: 'ffoerster/bzwjena/termine/update/:id'
+    redirectClose: ffoerster/bzwjena/termine
+update:
+    redirect: ffoerster/bzwjena/termine
+    redirectClose: ffoerster/bzwjena/termine

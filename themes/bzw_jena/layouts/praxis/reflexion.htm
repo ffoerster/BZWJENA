@@ -1,0 +1,73 @@
+description = "Reflexion beruflichen Handelns"
+
+[staticPage]
+useContent = 1
+default = 0
+==
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% partial 'site/meta' %}
+</head>
+<body>
+
+<div class="uk-offcanvas-content uk-grid-collapse" uk-grid>
+  <!-- Header -->
+  <header id="layout-header" class="bzw-width-1-12 uk-visible@s">
+    {% partial 'site/header' %}
+  </header>
+
+  <div id="header-mobile" class="uk-width-1-1 uk-hidden@s">
+    {% partial 'site/header-mobile' %}
+  </div>
+
+  <div id="main-content" class="uk-width-expand">
+    <div id="site-switcher">
+      {% partial 'site/siteswitcher' %}
+    </div>
+
+    <!-- Content -->
+    <main id="layout-content">
+
+      {variable name="einzelsupervision_titel" label="Überschrift" tab="Einzelsupervision" type="text"}{/variable}
+      {variable name="einzelsupervision_inhalt" label="Inhalt" tab="Einzelsupervision" type="richeditor"}{/variable}
+
+      {variable name="teamsupervision_titel" label="Überschrift" tab="Teamsupervision" type="text"}{/variable}
+      {variable name="teamsupervision_inhalt" label="Inhalt" tab="Teamsupervision" type="richeditor"}{/variable}
+
+      {repeater name="content_sections" prompt="Add another content section"}
+      <h2>{text name="title" label="Title"}Title{/text}</h2>
+      <p>{textarea name="content" label="Content"}Content{/textarea}</p>
+      {/repeater}
+
+      <div class="uk-section uk-section-default uk-section-xsmall">
+        <div class="uk-container">
+          <h2 class="uk-h2">Geschichte der Praxis</h2>
+
+          <h3 class="uk-h3">{{ einzelsupervision_titel }}</h3>
+          {{ einzelsupervision_inhalt|raw }}
+
+        </div>
+      </div>
+      
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer id="layout-footer" class="uk-width-1-1">
+    {% partial 'site/footer' %}
+  </footer>
+
+
+</div>
+
+<!-- Scripts -->
+<script src="{{ 'assets/dist/js/manifest.js'|theme }}"></script>
+<script src="{{ 'assets/dist/js/vendor.js'|theme }}"></script>
+<script src="{{ 'assets/dist/js/app.js'|theme }}"></script>
+{% framework extras %}
+{% scripts %}
+
+</body>
+</html>

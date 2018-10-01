@@ -1,0 +1,10 @@
+name: Team
+form: $/ffoerster/bzwjena/models/team/fields.yaml
+modelClass: ffoerster\BZWJena\Models\Team
+defaultRedirect: ffoerster/bzwjena/team
+create:
+    redirect: 'ffoerster/bzwjena/team/update/:id'
+    redirectClose: ffoerster/bzwjena/team
+update:
+    redirect: ffoerster/bzwjena/team
+    redirectClose: ffoerster/bzwjena/team

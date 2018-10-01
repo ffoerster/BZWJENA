@@ -1,0 +1,32 @@
+fields:
+    wb_title:
+        label: Titel
+        span: auto
+        required: 1
+        type: text
+    wb_slug:
+        label: Slug
+        span: auto
+        preset:
+            field: wb_title
+            type: slug
+        type: text
+    wb_subtitle:
+        label: Untertitel
+        span: auto
+        type: text
+    wb_file:
+        label: 'PDF Upload'
+        mode: file
+        fileTypes: pdf
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    wb_description:
+        label: Beschreibung
+        span: full
+        size: large
+        type: richeditor

@@ -1,0 +1,20 @@
+columns:
+    id:
+        label: ID
+        type: number
+        sortable: true
+    team_title:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    team_type:
+        label: Kategorie
+        type: number
+        searchable: true
+        sortable: true
+    team_function:
+        label: Funktion
+        type: text
+        searchable: true
+        sortable: true

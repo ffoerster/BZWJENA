@@ -1,0 +1,4 @@
+title: Weiterbildung
+modelClass: ffoerster\BZWJena\Models\Weiterbildung
+toolbar:
+    buttons: reorder_toolbar

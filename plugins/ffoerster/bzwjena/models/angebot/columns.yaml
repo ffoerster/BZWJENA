@@ -1,0 +1,16 @@
+columns:
+    id:
+        label: id
+        type: number
+    created_at:
+        label: created_at
+        type: datetime
+    updated_at:
+        label: updated_at
+        type: datetime
+    angebot_title:
+        label: angebot_title
+        type: text
+    angebot_slug:
+        label: angebot_slug
+        type: text
