@@ -1,74 +1,41 @@
 
-/// Regular font family
-/// @type List
-$text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+/**
+FARBEN
+ */
+$primary-color: #2699fb;
+$secondary-color: #62b3fa;
+$muted-color: #f1f9ff;
 
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace !default;
 
+/**
+SCHRIFTEN
+ */
+$global-font-family: "Futura-PT", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$global-font-size: 18px !default;
 
-// Colours
-$global-color: #2699fb !default;
-$base-heading-color: #2699fb !default;
+/**
+BUTTONS
+ */
+$button-default-background: transparent;
+$button-default-color: $primary-color;
 
-$tile-muted-background: #f1f9ff !default;
-$tile-primary-background: #2699fb !default;
-$tile-secondary-background: #62b3fa !default;
+// UIKit Reset
+$global-color: $primary-color !default;
+$base-heading-color: $primary-color !default;
 
-$global-primary-background: #2699fb !default;
+$tile-muted-background: $muted-color !default;
+$tile-primary-background: $primary-color !default;
+$tile-secondary-background: $secondary-color !default;
+
+$global-primary-background: $primary-color !default;
+
+$text-lead-line-height: 1.2;
+$text-lead-color: inherit;
 
 
 // Accordion
 $internal-accordion-close-image: "data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cpolygon%20points%3D%2210.5%2C16.08%205.63%2C10.66%206.37%2C10%2010.5%2C14.58%2014.63%2C10%2015.37%2C10.66%22%3E%3C%2Fpolygon%3E%20%3Cline%20fill%3D%22none%22%20stroke%3D%22%23000%22%20x1%3D%2210.5%22%20y1%3D%224%22%20x2%3D%2210.5%22%20y2%3D%2215%22%3E%3C%2Fline%3E%3C%2Fsvg%3E" !default;
 $internal-accordion-open-image: "data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cpolygon%20points%3D%2210.5%2C4%2015.37%2C9.4%2014.63%2C10.08%2010.5%2C5.49%206.37%2C10.08%205.63%2C9.4%22%3E%3C%2Fpolygon%3E%20%3Cline%20fill%3D%22none%22%20stroke%3D%22%23000%22%20x1%3D%2210.5%22%20y1%3D%2216%22%20x2%3D%2210.5%22%20y2%3D%225%22%3E%3C%2Fline%3E%3C%2Fsvg%3E" !default;
-
-
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
-
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
-
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
-
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
-
-
-
-
-
-/// Container"s maximum width
-/// @type Length
-$max-width: 1180px !default;
-
-
-
-
-
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  "small": 320px,
-  "medium": 768px,
-  "large": 1024px,
-) !default;
-
-
-
-
-
 
 /// Relative or absolute URL where all assets are served from
 /// @type String

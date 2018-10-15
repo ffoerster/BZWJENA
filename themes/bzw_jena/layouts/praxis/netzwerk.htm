@@ -30,77 +30,61 @@ use ffoerster\bzwjena\Models\Team;
   </div>
 
   <div id="main-content" class="uk-width-expand">
-    <div id="site-switcher">
-      {% partial 'site/siteswitcher' %}
-    </div>
-
     <!-- Content -->
     <main id="layout-content">
-      <div class="uk-section uk-section-default uk-section-xsmall">
-        <div class="uk-container">
+      {% partial "components/pageheader" color="muted" %}
 
-          <h2 class="uk-h2">Institutionen</h2>
-          <ul class="uk-list">
-          {repeater name="institution_section" label="Institutionen" tab="Institutionen" prompt="Weiteren Link hinzufügen"}
-          <li>
-            <a class="uk-accordion-title uk-link-reset" href="{{ link }}">
-              {text name="title" label="Title"}Title{/text}
-            </a>
-            {variable name="link" label="Link" type="text"}{/variable}
-          </li>
-          {/repeater}
-          </ul>
+      <div class="uk-section uk-section-default uk-section-xsmall uk-padding-remove-top">
+        <div class="uk-container uk-container-expand">
+          <div class="uk-tile uk-tile-default uk-padding">
+            <h2 class="uk-h1">Unsere Institutionen</h2>
 
-
-          <h2 class="uk-h2">Unsere Gasttrainer</h2>
-          <div uk-grid class="uk-child-width-1-4@s uk-grid-small">
-
-            {% for team in team if team.team_type == 1 %}
-            <div>
-              <div class="uk-tile uk-tile-muted">
-                <h4>{{ team.team_title }}</h4>
-                <h4>{{ team.team_function }}</h4>
-                <img uk-img src="{{ team.teambild.path }}" alt="">
-                {{ team.team_type }}
-              </div>
-            </div>
-            {% else %}
-            <li class="no-data">Keine Einträge gefunden.</li>
-            {% endfor %}
-
-            <div>
-              <div class="uk-tile uk-tile-muted">
-                bla
-              </div>
-            </div>
-
-            <div>
-              <div class="uk-tile uk-tile-muted">
-                bla
-              </div>
-            </div>
-
-            <div>
-              <div class="uk-tile uk-tile-muted">
-                bla
-              </div>
-            </div>
-
-            <div>
-              <div class="uk-tile uk-tile-muted">
-                bla
-              </div>
-            </div>
-
+            <ul class="uk-list">
+              {repeater name="institution_section" label="Institutionen" tab="Institutionen" prompt="Weiteren Link hinzufügen"}
+              <li>
+                <a class="uk-accordion-title uk-link-reset" href="{{ link }}">
+                  {text name="title" label="Title"}Title{/text}
+                </a>
+                {variable name="link" label="Link" type="text"}{/variable}
+              </li>
+              {/repeater}
+            </ul>
 
           </div>
         </div>
       </div>
+
+      <div class="uk-section uk-section-default uk-section-xsmall uk-padding-remove-top">
+        <div class="uk-container uk-container-expand">
+          <div class="uk-tile uk-tile-default uk-padding">
+            <h2 class="uk-h1">Unsere Gasttrainer</h2>
+
+            <div uk-grid class="uk-child-width-1-4@s uk-grid-small">
+
+              {% for team in team if team.team_type == 1 %}
+              <div>
+                <div class="uk-tile uk-tile-muted uk-padding">
+                  <img uk-img src="{{ team.teambild.path }}" alt="">
+                  <h4 class="uk-plantin">{{ team.team_title }}</h4>
+
+                  <p>{{ team.team_function }}</p>
+
+                </div>
+              </div>
+              {% else %}
+                <li class="no-data">Keine Einträge gefunden.</li>
+              {% endfor %}
+
+            </div>
+          </div>
+        </div>
+      </div>
+
     </main>
   </div>
 
   <!-- Footer -->
-  <footer id="layout-footer" class="uk-width-1-1">
+  <footer id="layout-footer" class="footer-main uk-width-1-1">
     {% partial 'site/footer' %}
   </footer>
 

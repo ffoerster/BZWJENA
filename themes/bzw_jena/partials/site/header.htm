@@ -4,7 +4,26 @@
   <a uk-icon="icon:menu; ratio: 2" href="" class="uk-icon-link" uk-toggle="target: #offcanvas-usage"></a>
 
   <div id="offcanvas-usage" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar uk-background-primary uk-flex uk-flex-column">
+    <div class="uk-offcanvas-bar uk-background-primary uk-flex uk-flex-column uk-flex-top">
+
+      <div class="uk-position-relative">
+        <div class="uk-grid uk-grid-collapse" uk-grid="">
+          <div class="uk-width-1-2@s">
+            <div class="uk-tile uk-tile-secondary uk-padding-small">
+              <h4 class="uk-h6 uk-text-bold uk-text-small uk-margin-remove">Praxisangebot</h4>
+              <a href="/praxis" class="uk-overlay uk-position-cover"></a>
+            </div>
+          </div>
+          <div class="uk-width-1-2">
+            <div class="uk-tile uk-tile-secondary uk-padding-small">
+              <h4 class="uk-h6 uk-text-bold uk-text-small uk-margin-remove">Weiterbildung</h4>
+              <a href="/institut" class="uk-overlay uk-position-cover"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
       <button class="uk-offcanvas-close" type="button" uk-close></button>
 
@@ -12,21 +31,21 @@
 
         <li>
           <a href="/praxis/beratung-therapie">
-            <span class="uk-text-uppercase uk-h5">Beratung & Therapie</span>
+            <span class="uk-text-uppercase uk-h5 uk-text-bold">Beratung & Therapie</span>
             <h6 class="uk-h6 uk-h6 uk-margin-remove">psychologisch, systemisch</h6>
           </a>
         </li>
 
         <li>
           <a href="/praxis/reflexion">
-            <span class="uk-text-uppercase uk-h5">Reflexion</span>
+            <span class="uk-text-uppercase uk-h5 uk-text-bold">Reflexion</span>
             <h6 class="uk-h6 uk-h6 uk-margin-remove">beruflichen Handelns</h6>
           </a>
         </li>
 
         <li>
           <a href="/praxis/mitarbeiter">
-            <span class="uk-text-uppercase uk-h5">&uuml;ber uns</span>
+            <span class="uk-text-uppercase uk-h5 uk-text-bold">&uuml;ber uns</span>
             <h6 class="uk-h6 uk-h6 uk-margin-remove">und unsere Arbeitsweise</h6>
           </a>
         </li>
@@ -37,11 +56,29 @@
         <li><a href="/praxis/geschichte">Geschichte der Praxis <span class="uk-margin-small-left" uk-icon="icon: arrow-right"></span></a></li>
         <li><a href="/praktika">Praktika <span class="uk-margin-small-left" uk-icon="icon: arrow-right"></span></a></li>
 
-        <li class="uk-nav-header">Kontakt</li>
-        <li>
-          <span class="uk-text-bold">gstreicher@beziehungswerkstatt­jena.de</span>
+        <div class="uk-margin">
+          <li class="uk-margin uk-margin-remove-bottom">
+            <span class="uk-text-uppercase uk-h5 uk-text-bold uk-margin-remove">Kontakt</span>
+            <p class="uk-margin-remove uk-text-small">+49 12345689</p>
+          </li>
+          <li class="">
+          <span class="uk-h6 uk-text-bold uk-margin-remove">Gerhardt Streicher</span>
+          <p class="uk-margin-remove uk-text-small">gstreicher@beziehungswerkstatt­jena.de</p>
         </li>
-        <li>monika</li>
+          <li class="">
+            <span class="uk-h6 uk-text-bold uk-margin-remove">Monika Streicher-Pachmann</span>
+            <p class="uk-margin-remove uk-text-small">gstreicher@beziehungswerkstatt­jena.de</p>
+          </li>
+
+          <li class="uk-margin uk-margin-remove-bottom">
+            <span class="uk-h6 uk-text-uppercase uk-text-bold uk-margin-remove">Praxis</span>
+            <p class="uk-margin-remove uk-text-small">gstreicher@beziehungswerkstatt­jena.de</p>
+          </li>
+          <li class="">
+            <span class="uk-h6 uk-text-uppercase uk-text-bold uk-margin-remove">Postadresse</span>
+            <p class="uk-margin-remove uk-text-small">gstreicher@beziehungswerkstatt­jena.de</p>
+          </li>
+        </div>
 
       </ul>
 
