@@ -1,2 +1,44 @@
 description = "Praktika"
 ==
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% partial 'site/meta' %}
+</head>
+<body>
+
+<div class="uk-offcanvas-content uk-grid-collapse" uk-grid>
+  <!-- Header -->
+  <header id="layout-header" class="bzw-width-1-12 uk-visible@s">
+    {% partial 'site/header' position="1" %}
+  </header>
+
+  <div id="header-mobile" class="uk-width-1-1 uk-hidden@s">
+    {% partial 'site/header-mobile' %}
+  </div>
+
+  <div id="main-content" class="uk-width-expand">
+    <!-- Content -->
+    <main id="layout-content">
+      {% page %}
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer id="layout-footer" class="footer-main uk-width-1-1">
+    {% partial 'site/footer' %}
+  </footer>
+
+
+</div>
+
+<!-- Scripts -->
+<script src="{{ 'assets/dist/js/manifest.js'|theme }}"></script>
+<script src="{{ 'assets/dist/js/vendor.js'|theme }}"></script>
+<script src="{{ 'assets/dist/js/app.js'|theme }}"></script>
+{% framework extras %}
+{% scripts %}
+
+</body>
+</html>

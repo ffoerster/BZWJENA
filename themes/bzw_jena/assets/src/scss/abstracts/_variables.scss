@@ -19,6 +19,21 @@ BUTTONS
 $button-default-background: transparent;
 $button-default-color: $primary-color;
 
+/**
+OFFCANVAS
+ */
+
+$offcanvas-bar-width: 300px !default;
+$offcanvas-bar-padding-vertical: 40px !default;
+$offcanvas-bar-padding-horizontal: 20px !default;
+
+/**
+SUBNAV
+ */
+
+$subnav-pill-item-background: $muted-color;
+
+
 // UIKit Reset
 $global-color: $primary-color !default;
 $base-heading-color: $primary-color !default;

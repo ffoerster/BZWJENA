@@ -140,4 +140,5 @@
   'VojtaSvoboda\\TwigExtensions\\Classes\\TimeDiffTranslator' => 'plugins/vojtasvoboda/twigextensions/classes/TimeDiffTranslator.php',
   'backend\\Controllers\\media' => 'modules/backend/controllers/media.php',
   'backend\\Controllers\\users' => 'modules/backend/controllers/users.php',
+  'ffoerster\\bzwjena\\Models\\Weiterbildung' => 'plugins/ffoerster/bzwjena/models/Weiterbildung.php',
 );
