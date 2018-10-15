@@ -1,4 +1,15 @@
-body {
-  //color: $text-color;
-  //font: normal 125% / 1.4 $text-font-stack;
+.uk-plantin {
+  font-family: "Plantin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@mixin hook-base-h1() {
+  font-family: "Plantin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@mixin hook-base-h4() {
+  font-weight: bold;
+}
+
+@mixin hook-text-lead() {
+  font-family: "Plantin";
 }

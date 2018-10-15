@@ -1,4 +1,5 @@
-description = "Praxis Start"
+description = "Home Institut"
+
 [staticPage]
 useContent = 1
 default = 0
@@ -14,7 +15,7 @@ default = 0
 <div class="uk-offcanvas-content uk-grid-collapse" uk-grid>
   <!-- Header -->
   <header id="layout-header" class="bzw-width-1-12 uk-visible@s">
-    {% partial 'site/header' %}
+    {% partial 'site/header' position="1" %}
   </header>
 
   <div id="header-mobile" class="uk-width-1-1 uk-hidden@s">
@@ -22,10 +23,6 @@ default = 0
   </div>
 
   <div id="main-content" class="uk-width-expand">
-    <div id="site-switcher">
-      {% partial 'site/siteswitcher' %}
-    </div>
-
     <!-- Content -->
     <main id="layout-content">
       {% page %}
@@ -33,7 +30,7 @@ default = 0
   </div>
 
   <!-- Footer -->
-  <footer id="layout-footer" class="uk-width-1-1">
+  <footer id="layout-footer" class="footer-main uk-width-1-1">
     {% partial 'site/footer' %}
   </footer>
 

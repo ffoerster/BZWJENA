@@ -23,12 +23,10 @@ default = 0
   </div>
 
   <div id="main-content" class="uk-width-expand">
-    <div id="site-switcher">
-      {% partial 'site/siteswitcher' %}
-    </div>
 
     <!-- Content -->
     <main id="layout-content">
+      {% partial "components/pageheader" color="muted" %}
 
       {variable name="einzelsupervision_titel" label="Überschrift" tab="Einzelsupervision" type="text"}{/variable}
       {variable name="einzelsupervision_inhalt" label="Inhalt" tab="Einzelsupervision" type="richeditor"}{/variable}
@@ -37,12 +35,12 @@ default = 0
       {variable name="teamsupervision_inhalt" label="Inhalt" tab="Teamsupervision" type="richeditor"}{/variable}
 
       {repeater name="content_sections" prompt="Add another content section"}
-      <h2>{text name="title" label="Title"}Title{/text}</h2>
-      <p>{textarea name="content" label="Content"}Content{/textarea}</p>
+        <h2>{text name="title" label="Titel"}Title{/text}</h2>
+        <p>{richeditor name="content" label="Inhalt"}Content{/richeditor}</p>
       {/repeater}
 
       <div class="uk-section uk-section-default uk-section-xsmall">
-        <div class="uk-container">
+        <div class="uk-container uk-container-expand">
           <h2 class="uk-h2">Geschichte der Praxis</h2>
 
           <h3 class="uk-h3">{{ einzelsupervision_titel }}</h3>
@@ -55,7 +53,7 @@ default = 0
   </div>
 
   <!-- Footer -->
-  <footer id="layout-footer" class="uk-width-1-1">
+  <footer id="layout-footer" class="footer-main uk-width-1-1">
     {% partial 'site/footer' %}
   </footer>
 

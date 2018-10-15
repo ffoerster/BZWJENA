@@ -1,0 +1,79 @@
+title = "Home Institut"
+url = "/institut"
+layout = "institut/home-institut"
+is_hidden = 0
+==
+<?php
+use ffoerster\bzwjena\Models\Weiterbildung;
+    function onStart(){
+        $this['weiterbildung'] = Weiterbildung::take(8)->get();
+}
+?>
+==
+<div class="uk-section uk-section-default uk-section-xsmall">
+  <div class="uk-container uk-container-expand uk-padding-small uk-padding-remove-vertical uk-padding-remove-left">
+
+    <div class="uk-grid-small" uk-grid uk-height-match="target: > div > .uk-tile">
+
+      <div class="uk-width-1-1@s">
+        <div class="uk-tile uk-tile-muted">
+          <div uk-grid>
+            <div class="uk-width-3-5@s">
+              <h1 class="uk-plantin uk-text-bold uk-margin-remove">INSTITUT</h1>
+              <h2 class="uk-plantin uk-margin-remove">
+                <i>für</i>
+              </h2>
+              <h2 class="uk-plantin uk-margin-remove">
+                SYSTEMISCHE  BERATUNG<br>
+                FAMILIENTHERAPIE<br>
+                UND  SUPERVISION
+              </h2>
+            </div>
+            <div class="uk-width-expand@s uk-flex uk-flex-bottom uk-flex-right">
+              <img uk-img data-src="{{ 'assets/dist/images/logo-dgsf.svg'|theme }}" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="uk-width-1-1@s">
+        <div class="uk-tile uk-tile-muted">
+          <h3>Wir sind ein akkreditiertes Institut der DGSF mit einem hohen Qualitätsstandard →.
+            Unser Angebot richtet sich an Interssierte, die beruflich mit Menschen zu tun haben,
+            systemische Denk­ und Handlungsansätze für ihre Arbeit nutzen möchten, gerne lernen in
+            enger Verknüpfung von Theorie und Praxis. Lernen sie unser Weiterbildungsteam →
+            kennen und erfahren sie etwas über die Geschichte des Instituts →.
+          </h3>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="uk-section uk-section-default uk-section-xsmall uk-padding-remove-top">
+  <div class="uk-container uk-container-expand uk-padding-remove-left">
+    <div class="uk-tile uk-tile-default uk-padding uk-padding-remove-left">
+      <h2 class="uk-h1 uk-padding">Weiterbildungsangebot</h2>
+
+      <ul uk-accordion="multiple: true">
+        {% for weiterbildung in weiterbildung %}
+        <li>
+          <a class="uk-accordion-title uk-link-reset" href="#">
+            <hr class="uk-hr-color">
+            <h3 class="uk-plantin uk-margin uk-padding uk-padding-remove-vertical">{{ weiterbildung.wb_title }}</h3>
+          </a>
+          <div class="uk-accordion-content uk-padding uk-padding-remove-vertical">
+            <p>{{ weiterbildung.wb_description |raw }}</p>
+            <a href="{{ weiterbildung.wb_file.path }}" target="_blank">PDF</a>
+          </div>
+        </li>
+        {% else %}
+        <li class="no-data">Keine Termine gefunden</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

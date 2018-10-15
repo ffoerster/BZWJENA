@@ -4,46 +4,136 @@
   <a uk-icon="icon:menu; ratio: 2" href="" class="uk-icon-link" uk-toggle="target: #offcanvas-usage"></a>
 
   <div id="offcanvas-usage" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar uk-background-primary uk-flex uk-flex-column">
+    <div class="uk-offcanvas-bar uk-background-primary uk-flex uk-flex-column uk-flex-top">
 
       <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-      <ul class="uk-nav uk-nav-default uk-nav-left uk-margin-auto-vertical">
-
-        <li>
-          <a href="/praxis/beratung-therapie">
-            <span class="uk-text-uppercase uk-h5">Beratung & Therapie</span>
-            <h6 class="uk-h6 uk-h6 uk-margin-remove">psychologisch, systemisch</h6>
-          </a>
+      <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade; swiping: true; active: {{ position }}">
+        <li class="">
+          <a href="#">Praxisangebot</a>
         </li>
-
-        <li>
-          <a href="/praxis/reflexion">
-            <span class="uk-text-uppercase uk-h5">Reflexion</span>
-            <h6 class="uk-h6 uk-h6 uk-margin-remove">beruflichen Handelns</h6>
-          </a>
+        <li class="">
+          <a href="#">Weiterbildung</a>
         </li>
-
-        <li>
-          <a href="/praxis/mitarbeiter">
-            <span class="uk-text-uppercase uk-h5">&uuml;ber uns</span>
-            <h6 class="uk-h6 uk-h6 uk-margin-remove">und unsere Arbeitsweise</h6>
-          </a>
-        </li>
-
-        <li class="uk-nav-divider"></li>
-
-        <li><a href="/praxis/netzwerk">Unser Netzwerk <span class="uk-margin-small-left" uk-icon="icon: arrow-right"></span></a></li>
-        <li><a href="/praxis/geschichte">Geschichte der Praxis <span class="uk-margin-small-left" uk-icon="icon: arrow-right"></span></a></li>
-        <li><a href="/praktika">Praktika <span class="uk-margin-small-left" uk-icon="icon: arrow-right"></span></a></li>
-
-        <li class="uk-nav-header">Kontakt</li>
-        <li>
-          <span class="uk-text-bold">gstreicher@beziehungswerkstatt­jena.de</span>
-        </li>
-        <li>monika</li>
-
       </ul>
+
+      <ul class="uk-switcher uk-margin">
+        <li>
+          <ul class="uk-nav uk-nav-default uk-nav-left uk-margin-auto-vertical">
+
+            <li>
+              <a href="/praxis/beratung-therapie">
+                <span class="uk-text-uppercase uk-h5 uk-text-bold">Beratung & Therapie</span>
+                <h6 class="uk-h6 uk-h6 uk-margin-remove">psychologisch, systemisch</h6>
+              </a>
+            </li>
+
+            <li>
+              <a href="/praxis/reflexion">
+                <span class="uk-text-uppercase uk-h5 uk-text-bold">Reflexion</span>
+                <h6 class="uk-h6 uk-h6 uk-margin-remove">beruflichen Handelns</h6>
+              </a>
+            </li>
+
+            <li>
+              <a href="/praxis/mitarbeiter">
+                <span class="uk-text-uppercase uk-h5 uk-text-bold">&uuml;ber uns</span>
+                <h6 class="uk-h6 uk-h6 uk-margin-remove">und unsere Arbeitsweise</h6>
+              </a>
+            </li>
+
+            <li class="uk-nav-divider"></li>
+
+            <li><a href="/praxis/netzwerk">Unser Netzwerk <span class="uk-margin-small-left" uk-icon="icon: arrow-right"></span></a></li>
+            <li><a href="/praxis/geschichte">Geschichte der Praxis <span class="uk-margin-small-left" uk-icon="icon: arrow-right"></span></a></li>
+            <li><a href="/praktika">Praktika <span class="uk-margin-small-left" uk-icon="icon: arrow-right"></span></a></li>
+
+            <div class="uk-margin">
+              <li class="uk-margin uk-margin-remove-bottom">
+                <span class="uk-text-uppercase uk-h5 uk-text-bold uk-margin-remove">Kontakt</span>
+                <p class="uk-margin-remove uk-text-small">+49 12345689</p>
+              </li>
+              <li class="">
+                <span class="uk-h6 uk-text-bold uk-margin-remove">Gerhardt Streicher</span>
+                <p class="uk-margin-remove uk-text-small">gstreicher@beziehungswerkstatt­jena.de</p>
+              </li>
+              <li class="">
+                <span class="uk-h6 uk-text-bold uk-margin-remove">Monika Streicher-Pachmann</span>
+                <p class="uk-margin-remove uk-text-small">gstreicher@beziehungswerkstatt­jena.de</p>
+              </li>
+
+              <li class="uk-margin uk-margin-remove-bottom">
+                <span class="uk-h6 uk-text-uppercase uk-text-bold uk-margin-remove">Praxis</span>
+                <p class="uk-margin-remove uk-text-small">gstreicher@beziehungswerkstatt­jena.de</p>
+              </li>
+              <li class="">
+                <span class="uk-h6 uk-text-uppercase uk-text-bold uk-margin-remove">Postadresse</span>
+                <p class="uk-margin-remove uk-text-small">gstreicher@beziehungswerkstatt­jena.de</p>
+              </li>
+            </div>
+
+          </ul>
+        </li>
+        <li>
+          <ul class="uk-nav uk-nav-default uk-nav-left uk-margin-auto-vertical">
+
+            <li>
+              <a href="/institut">
+                <span class="uk-text-uppercase uk-h5 uk-text-bold">Institut & Angebot</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="/institut/weiterbildungsteam">
+                <span class="uk-text-uppercase uk-h5 uk-text-bold">Weiterbildungsteam</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="/institut/qualitaetssicherung">
+                <span class="uk-text-uppercase uk-h5 uk-text-bold">Qualitätssicherung</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="/institut/engagement">
+                <span class="uk-text-uppercase uk-h5 uk-text-bold">Engagement im Berufsverband</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="/institut/geschichte">
+                <span class="uk-text-uppercase uk-h5 uk-text-bold">Geschichte unseres Instituts</span>
+              </a>
+            </li>
+
+            <li class="uk-nav-divider"></li>
+
+            <li><a href="/praktika">Praktika <span class="uk-margin-small-left" uk-icon="icon: arrow-right"></span></a></li>
+
+            <div class="uk-margin">
+              <li class="uk-margin uk-margin-remove-bottom">
+                <span class="uk-text-uppercase uk-h5 uk-text-bold uk-margin-remove">Kontakt</span>
+                <p class="uk-margin-remove uk-text-small">
+                  +49 12345689<br>
+                  institut@beziehungswerkstatt­jena.de
+                </p>
+              </li>
+
+              <li class="uk-margin uk-margin-remove-bottom">
+                <span class="uk-h6 uk-text-uppercase uk-text-bold uk-margin-remove">Praxis</span>
+                <p class="uk-margin-remove uk-text-small">gstreicher@beziehungswerkstatt­jena.de</p>
+              </li>
+              <li class="">
+                <span class="uk-h6 uk-text-uppercase uk-text-bold uk-margin-remove">Postadresse</span>
+                <p class="uk-margin-remove uk-text-small">gstreicher@beziehungswerkstatt­jena.de</p>
+              </li>
+            </div>
+
+          </ul>
+        </li>
+      </ul>
+
 
 
 

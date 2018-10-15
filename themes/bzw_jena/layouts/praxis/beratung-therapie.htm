@@ -23,26 +23,22 @@ default = 0
   </div>
 
   <div id="main-content" class="uk-width-expand">
-    <div id="site-switcher">
-      {% partial 'site/siteswitcher' %}
-    </div>
-
     <!-- Content -->
     <main id="layout-content">
+      {% partial "components/pageheader" color="muted" %}
 
       <div class="uk-section uk-section-default uk-section-xsmall">
-        <div class="uk-container">
-          <h2 class="uk-h2">Beratung & Therapie</h2>
+        <div class="uk-container uk-container-expand">
 
               <ul uk-accordion="multiple: true">
-                {repeater name="content_sections" label="Akkordeons" tab="MyTab" prompt="Add another content section"}
+                {repeater name="content_sections" label="Therapieangebote" tab="Therapieangebote" prompt="Add another content section"}
                 <li>
                   <a class="uk-accordion-title uk-link-reset" href="#">
                     <hr>
-                    <span class="uk-margin-left">{text name="title" label="Title"}Title{/text}</span>
+                    <h3 class="uk-plantin uk-margin uk-padding uk-padding-remove-vertical">{text name="title" label="Titel"}Title{/text}</h3>
                   </a>
-                  <div class="uk-accordion-content uk-margin-left">
-                    <p>{textarea name="content" label="Content"}Content{/textarea}</p>
+                  <div class="uk-accordion-content uk-padding uk-padding-remove-vertical">
+                    <p>{richeditor name="content" label="Inhalt"}Content{/richeditor}</p>
                   </div>
                 </li>
                 {/repeater}
@@ -55,7 +51,7 @@ default = 0
   </div>
 
   <!-- Footer -->
-  <footer id="layout-footer" class="uk-width-1-1">
+  <footer id="layout-footer" class="footer-main uk-width-1-1">
     {% partial 'site/footer' %}
   </footer>
 

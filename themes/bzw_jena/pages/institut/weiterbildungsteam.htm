@@ -10,49 +10,26 @@ use ffoerster\bzwjena\Models\Team;
 }
 ?>
 ==
+{% partial "components/pageheader" color="muted" %}
+
 <div class="uk-section uk-section-default uk-section-xsmall">
-  <div class="uk-container">
-    <h2 class="uk-h2">Weiterbildungsteam</h2>
-    <div uk-grid class="uk-child-width-1-4@s uk-grid-small">
+  <div class="uk-container uk-container-expand">
 
-      {% for team in team if team.team_type == 2 %}
-      <div>
-        <div class="uk-tile uk-tile-muted">
-          <h4>{{ team.team_title }}</h4>
-          <h4>{{ team.team_function }}</h4>
-          <img uk-img src="{{ team.teambild.path }}" alt="">
-          {{ team.team_type }}
-        </div>
-      </div>
-      {% else %}
-      <li class="no-data">No Movies found</li>
-      {% endfor %}
+      <div class="uk-child-width-1-4@s" uk-grid>
+        {% for team in team if team.team_type == 2 %}
+        <div>
+          <div class="uk-tile uk-tile-muted uk-padding">
+            <img uk-img src="{{ team.teambild.path }}" alt="">
+            <h4 class="uk-plantin">{{ team.team_title }}</h4>
 
-      <div>
-        <div class="uk-tile uk-tile-muted">
-          bla
+            <p>{{ team.team_function }}</p>
+          </div>
         </div>
-      </div>
-
-      <div>
-        <div class="uk-tile uk-tile-muted">
-          bla
-        </div>
-      </div>
-
-      <div>
-        <div class="uk-tile uk-tile-muted">
-          bla
-        </div>
-      </div>
-
-      <div>
-        <div class="uk-tile uk-tile-muted">
-          bla
-        </div>
+        {% else %}
+        <li class="no-data">Keine Einträge gefunden</li>
+        {% endfor %}
       </div>
 
 
-    </div>
   </div>
 </div>

@@ -9,14 +9,12 @@
 // 2. Vendors
 @import
   "vendor/normalize",
-  "~uikit/src/scss/variables-theme.scss",
-  "~uikit/src/scss/mixins-theme.scss",
-  "~uikit/src/scss/uikit-theme";
+  "~uikit/src/scss/variables",
+  "~uikit/src/scss/mixins";
 
 // 3. Grundlegendes
 @import
   "base/base",
-  "base/fonts",
   "base/typography",
   "base/helpers";
 
@@ -36,4 +34,5 @@
 
 // 7. Themes
 @import
-  "themes/default";
+  "themes/default",
+  "~uikit/src/scss/uikit";
